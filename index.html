@@ -5,12 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profil Faiza Clara Vimanda</title>
 
-  <!-- Link Font Awesome untuk ikon -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,29 +57,34 @@
     }
 
     /* Bagian ikon sosial media */
-    .social-links a {
-      font-size: 30px;
-      margin: 0 15px;
-      color: #555;
-      transition: color 0.3s, transform 0.3s;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
     }
 
-    .social-links a:hover {
+    .social-links a svg {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+    }
+
+    .social-links a:hover svg {
       transform: scale(1.2);
     }
 
-    .social-links a.instagram:hover {
-      color: #e4405f;
+    .social-links .instagram svg:hover {
+      filter: drop-shadow(0 0 5px #e4405f);
     }
 
-    .social-links a.github:hover {
-      color: #333;
+    .social-links .github svg:hover {
+      filter: drop-shadow(0 0 5px #333);
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <!-- Ganti src foto dengan milikmu nanti -->
+    <!-- Ganti src dengan foto kamu nanti -->
     <img src="images/foto-clara.png" alt="Foto Faiza Clara Vimanda" class="profile-pic" />
 
     <h2>Faiza Clara Vimanda</h2>
@@ -95,25 +94,10 @@
       <p><strong>Program Studi:</strong> Sistem Informasi</p>
     </div>
 
-    <!-- Ikon Sosial Media -->
+    <!-- Logo Sosial Media -->
     <div class="social-links">
-      <a
-        href="https://www.instagram.com/c.clarasyh?igsh=MTVkcWNrOTBrZHkwaQ=="
-        class="instagram"
-        target="_blank"
-        title="Instagram"
-      >
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a
-        href="https://faizaclara.github.io"
-        class="github"
-        target="_blank"
-        title="GitHub"
-      >
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </div>
-</body>
-</html>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/c.clarasyh?igsh=MTVkcWNrOTBrZHkwaQ==" 
+         class="instagram" target="_blank" title="Instagram">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="#E4405F">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 189.6c-41.3 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.9 0 26.9 12 26.9 26.9zm76.1 27.2c-.1-54.6-4.9-102.9-49.8-147.8C372.3 4.9 324 0 269.4 0H178.6C124 0 75.7 4.9 30.8 49.8-14 94.7-18.9 143-19 197.6v90.8c.1 54.6 4.9 102.9 49.8 147.8C75.7 507.1 124 512
