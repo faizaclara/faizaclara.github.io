@@ -1,89 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profil Faiza Clara Vimanda</title>
+
+  <!-- Link Font Awesome untuk ikon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+      padding: 40px;
       text-align: center;
+      max-width: 400px;
+      width: 90%;
+      transition: transform 0.3s;
     }
 
-    .container {
-      margin-top: 50px;
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    /* Foto profil */
+    /* Foto Profil */
     .profile-pic {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #333;
+      border: 4px solid #66a6ff;
+      margin-bottom: 20px;
     }
 
-    /* Informasi biodata */
+    /* Nama dan biodata */
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 26px;
+      color: #333;
+    }
+
     .info {
-      margin-top: 20px;
-      font-size: 18px;
+      color: #555;
+      font-size: 16px;
       line-height: 1.6;
+      margin-bottom: 25px;
     }
 
-    .info h2 {
-      margin-bottom: 10px;
-    }
-
-    /* Ikon sosial media */
-    .social-links {
-      margin-top: 30px;
-    }
-
+    /* Bagian ikon sosial media */
     .social-links a {
-      display: inline-block;
-      margin: 0 10px;
-      text-decoration: none;
+      font-size: 30px;
+      margin: 0 15px;
+      color: #555;
+      transition: color 0.3s, transform 0.3s;
     }
 
-    .social-links img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      transition: transform 0.3s;
+    .social-links a:hover {
+      transform: scale(1.2);
     }
 
-    .social-links img:hover {
-      transform: scale(1.1);
+    .social-links a.instagram:hover {
+      color: #e4405f;
+    }
+
+    .social-links a.github:hover {
+      color: #333;
     }
   </style>
 </head>
 <body>
+  <div class="card">
+    <!-- Ganti src foto dengan milikmu nanti -->
+    <img src="images/foto-clara.png" alt="Foto Faiza Clara Vimanda" class="profile-pic" />
 
-  <div class="container">
-    <!-- Foto Profil (ganti src dengan gambar dari folder nanti) -->
-    <img src="WIN_20250523_16_22_38_Pro.jpg" alt="Foto Faiza Clara Vimanda" class="profile-pic">
-
-    <!-- Informasi Biodata -->
+    <h2>Faiza Clara Vimanda</h2>
     <div class="info">
-      <h2>Faiza Clara Vimanda</h2>
-      <p>NIM: 102022400300</p>
-      <p>Fakultas: Rekayasa Industri</p>
-      <p>Program Studi: Sistem Informasi</p>
+      <p><strong>NIM:</strong> 102022400300</p>
+      <p><strong>Fakultas:</strong> Rekayasa Industri</p>
+      <p><strong>Program Studi:</strong> Sistem Informasi</p>
     </div>
 
-    <!-- Link Sosial Media -->
+    <!-- Ikon Sosial Media -->
     <div class="social-links">
-      <a href="https://www.instagram.com/c.clarasyh?igsh=MTVkcWNrOTBrZHkwaQ==" target="_blank">
-        <img src="images/instagram-icon.png" alt="Instagram">
+      <a
+        href="https://www.instagram.com/c.clarasyh?igsh=MTVkcWNrOTBrZHkwaQ=="
+        class="instagram"
+        target="_blank"
+        title="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://faizaclara.github.io" target="_blank">
-        <img src="images/github-icon.png" alt="GitHub">
+      <a
+        href="https://faizaclara.github.io"
+        class="github"
+        target="_blank"
+        title="GitHub"
+      >
+        <i class="fab fa-github"></i>
       </a>
     </div>
   </div>
-
 </body>
 </html>
